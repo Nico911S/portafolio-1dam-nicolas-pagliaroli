@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coche>
+<conductor>
+<nombre>Nicolas Pagliaroli</nombre>
+<email>Nicopgla@gmail.com</email>
+</conductor>
+<caracteristica>
+<motor>65 CV</motor>
+<color>blanco</color>
+<modelo>Deportivo</modelo>
+</caracteristica>
+</coche>

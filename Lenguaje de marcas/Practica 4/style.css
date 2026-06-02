@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site {
+  width: 1200px;
+  margin: 10px auto;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 12px;
+  font-size: 12px;
+  color: #555;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.topline-left,
+.topline-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topline a {
+  color: #555;
+  text-decoration: none;
+}
+
+.topline a:hover {
+  color: #a70606;
+}
+
+.brand-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.logo {
+  width: 257px;
+  height: 39px;
+}
+
+.social {
+  width: 240px;
+  height: 94px;
+}
+
+.main-menu {
+  display: flex;
+  background: #b50d0d;
+  border-top: 1px solid #920505;
+  border-bottom: 1px solid #920505;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-menu a:hover {
+  background: #980808;
+}
+
+.content {
+  padding: 12px;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 920px 244px;
+  gap: 12px;
+}
+
+.left-col {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.main-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.mini-banners {
+  margin-top: 9px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+}
+
+.mini-banners img {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  padding: 1px;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discount-grid {
+  border: 1px solid #ddd;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7px;
+  justify-items: center;
+  background: #fafafa;
+}
+
+.discount-grid img {
+  width: 83px;
+  height: 83px;
+}
+
+.free-shipping {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.update-card {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 10px;
+}
+
+.update-card h3 {
+  margin: 0 0 6px;
+  color: #ac0808;
+  font-size: 15px;
+}
+
+.update-card p {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 1.4;
+}
+
+.update-card button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  padding: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update-card button img {
+  width: 12px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.cart-card {
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+}
+
+.cart-card img {
+  width: 35px;
+  height: 33px;
+}
+
+.cart-card p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.products {
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.products h2 {
+  margin: 0 0 9px;
+  color: #ad0909;
+  font-size: 21px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product-item {
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  padding: 8px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.product-item a {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #fff;
+  background: #b10a0a;
+  border-radius: 13px;
+  font-size: 12px;
+  padding: 5px 11px;
+}
+
+.product-item a img {
+  width: 16px;
+  height: 9px;
+}
+
+@media (max-width: 1220px) {
+  .site {
+    width: 96%;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-banners {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
